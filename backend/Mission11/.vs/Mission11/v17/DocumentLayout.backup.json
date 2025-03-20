@@ -1,0 +1,130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lukek\\OneDrive\\BYU\\WINTER 2025\\IS 413\\Mission11\\backend\\Mission11\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EC76DD13-E966-4D91-8F3E-DBC716E140E5}|Mission11\\Mission11.csproj|c:\\users\\lukek\\onedrive\\byu\\winter 2025\\is 413\\mission11\\backend\\mission11\\mission11\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC76DD13-E966-4D91-8F3E-DBC716E140E5}|Mission11\\Mission11.csproj|solutionrelative:mission11\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC76DD13-E966-4D91-8F3E-DBC716E140E5}|Mission11\\Mission11.csproj|c:\\users\\lukek\\onedrive\\byu\\winter 2025\\is 413\\mission11\\backend\\mission11\\mission11\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EC76DD13-E966-4D91-8F3E-DBC716E140E5}|Mission11\\Mission11.csproj|solutionrelative:mission11\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC76DD13-E966-4D91-8F3E-DBC716E140E5}|Mission11\\Mission11.csproj|c:\\users\\lukek\\onedrive\\byu\\winter 2025\\is 413\\mission11\\backend\\mission11\\mission11\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC76DD13-E966-4D91-8F3E-DBC716E140E5}|Mission11\\Mission11.csproj|solutionrelative:mission11\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC76DD13-E966-4D91-8F3E-DBC716E140E5}|Mission11\\Mission11.csproj|c:\\users\\lukek\\onedrive\\byu\\winter 2025\\is 413\\mission11\\backend\\mission11\\mission11\\data\\bookstorecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC76DD13-E966-4D91-8F3E-DBC716E140E5}|Mission11\\Mission11.csproj|solutionrelative:mission11\\data\\bookstorecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC76DD13-E966-4D91-8F3E-DBC716E140E5}|Mission11\\Mission11.csproj|c:\\users\\lukek\\onedrive\\byu\\winter 2025\\is 413\\mission11\\backend\\mission11\\mission11\\data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC76DD13-E966-4D91-8F3E-DBC716E140E5}|Mission11\\Mission11.csproj|solutionrelative:mission11\\data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC76DD13-E966-4D91-8F3E-DBC716E140E5}|Mission11\\Mission11.csproj|c:\\users\\lukek\\onedrive\\byu\\winter 2025\\is 413\\mission11\\backend\\mission11\\mission11\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EC76DD13-E966-4D91-8F3E-DBC716E140E5}|Mission11\\Mission11.csproj|solutionrelative:mission11\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\lukek\\OneDrive\\BYU\\WINTER 2025\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Mission11\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\lukek\\OneDrive\\BYU\\WINTER 2025\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Mission11\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-19T22:58:23.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\lukek\\OneDrive\\BYU\\WINTER 2025\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "Mission11\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\lukek\\OneDrive\\BYU\\WINTER 2025\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "Mission11\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T22:35:32.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lukek\\OneDrive\\BYU\\WINTER 2025\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\Program.cs",
+              "RelativeDocumentMoniker": "Mission11\\Program.cs",
+              "ToolTip": "C:\\Users\\lukek\\OneDrive\\BYU\\WINTER 2025\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\Program.cs",
+              "RelativeToolTip": "Mission11\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T22:33:23.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookstoreContext.cs",
+              "DocumentMoniker": "C:\\Users\\lukek\\OneDrive\\BYU\\WINTER 2025\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\Data\\BookstoreContext.cs",
+              "RelativeDocumentMoniker": "Mission11\\Data\\BookstoreContext.cs",
+              "ToolTip": "C:\\Users\\lukek\\OneDrive\\BYU\\WINTER 2025\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\Data\\BookstoreContext.cs",
+              "RelativeToolTip": "Mission11\\Data\\BookstoreContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T22:32:33.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\lukek\\OneDrive\\BYU\\WINTER 2025\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\Data\\Book.cs",
+              "RelativeDocumentMoniker": "Mission11\\Data\\Book.cs",
+              "ToolTip": "C:\\Users\\lukek\\OneDrive\\BYU\\WINTER 2025\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\Data\\Book.cs",
+              "RelativeToolTip": "Mission11\\Data\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T22:30:57.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lukek\\OneDrive\\BYU\\WINTER 2025\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\appsettings.json",
+              "RelativeDocumentMoniker": "Mission11\\appsettings.json",
+              "ToolTip": "C:\\Users\\lukek\\OneDrive\\BYU\\WINTER 2025\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\appsettings.json",
+              "RelativeToolTip": "Mission11\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-19T22:27:12.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
