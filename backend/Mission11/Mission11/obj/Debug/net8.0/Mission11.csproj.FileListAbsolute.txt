@@ -68,3 +68,4 @@ C:\Users\lukek\OneDrive\BYU\WINTER 2025\IS 413\Mission11\backend\Mission11\Missi
 C:\Users\lukek\OneDrive\BYU\WINTER 2025\IS 413\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\Mission11.pdb
 C:\Users\lukek\OneDrive\BYU\WINTER 2025\IS 413\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\Mission11.genruntimeconfig.cache
 C:\Users\lukek\OneDrive\BYU\WINTER 2025\IS 413\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\ref\Mission11.dll
+C:\Users\lukek\OneDrive\BYU\WINTER 2025\IS 413\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\Mission11.sourcelink.json

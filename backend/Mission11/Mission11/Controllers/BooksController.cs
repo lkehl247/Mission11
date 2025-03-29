@@ -17,26 +17,46 @@ namespace Mission11.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Book>>> GetBooks(
-            int pageNumber = 1, int pageSize = 5, string? sortBy = null)
+        public async Task<IActionResult> GetBooks(int pageNumber = 1, int pageSize = 5, string? sortBy = null, string? category = null)
         {
-            var booksQuery = _context.Books.AsQueryable();
+            var query = _context.Books.AsQueryable();
 
+            // Apply category filter if provided
+            if (!string.IsNullOrEmpty(category))
+            {
+                query = query.Where(b => b.Category == category);
+            }
+
+            // Sorting (if applicable)
             if (!string.IsNullOrEmpty(sortBy))
             {
-                booksQuery = sortBy.ToLower() switch
+                query = sortBy.ToLower() switch
                 {
-                    "title" => booksQuery.OrderBy(b => b.Title),
-                    _ => booksQuery
+                    "title" => query.OrderBy(b => b.Title),
+                    _ => query
                 };
             }
 
-            var books = await booksQuery
+            // Pagination
+            var books = await query
                 .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize)
                 .ToListAsync();
 
             return Ok(books);
         }
+
+        // New endpoint to get all unique categories
+        [HttpGet("categories")]
+        public async Task<IActionResult> GetCategories()
+        {
+            var categories = await _context.Books
+                .Select(b => b.Category)
+                .Distinct()
+                .ToListAsync();
+
+            return Ok(categories);
+        }
+
     }
 }
