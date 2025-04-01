@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "undefined/subscriptions/d393c432-990c-4167-8e3b-68e07b7c23a7/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/Mission13-Kehl-Backend",
+  "appService.deploySubpath": "backend\\Mission11\\Mission11\\publish"
+}

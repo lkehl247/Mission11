@@ -1,11 +1,11 @@
 import React from 'react';
 import { useCart } from './CartContext';
 import { Table, Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
-const Cart: React.FC<{ onContinueShopping: () => void }> = ({
-  onContinueShopping,
-}) => {
+const Cart: React.FC = () => {
   const { cart, removeFromCart, clearCart } = useCart();
+  const navigate = useNavigate();
 
   const totalPrice = cart.reduce(
     (sum, item) => sum + item.quantity * item.book.price,
@@ -17,7 +17,7 @@ const Cart: React.FC<{ onContinueShopping: () => void }> = ({
       'You are about to clear your cart. Are you sure?'
     );
     if (confirmClear) {
-      clearCart(); // Proceed to clear the cart
+      clearCart();
     }
   };
 
@@ -25,43 +25,51 @@ const Cart: React.FC<{ onContinueShopping: () => void }> = ({
     <div className="container">
       <h2 className="my-3">Shopping Cart</h2>
 
-      <Table striped bordered hover>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Quantity</th>
-            <th>Price</th>
-            <th>Subtotal</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {cart.map((item) => (
-            <tr key={item.book.bookID}>
-              <td>{item.book.title}</td>
-              <td>{item.quantity}</td>
-              <td>${item.book.price.toFixed(2)}</td>
-              <td>${(item.quantity * item.book.price).toFixed(2)}</td>
-              <td>
-                <Button
-                  variant="danger"
-                  onClick={() => removeFromCart(item.book.bookID)}
-                >
-                  Remove
-                </Button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </Table>
+      {cart.length === 0 ? (
+        <p>Your cart is empty.</p>
+      ) : (
+        <>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Subtotal</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {cart.map((item) => (
+                <tr key={item.book.bookID}>
+                  <td>{item.book.title}</td>
+                  <td>{item.quantity}</td>
+                  <td>${item.book.price.toFixed(2)}</td>
+                  <td>${(item.quantity * item.book.price).toFixed(2)}</td>
+                  <td>
+                    <Button
+                      variant="danger"
+                      onClick={() => removeFromCart(item.book.bookID)}
+                    >
+                      Remove
+                    </Button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
 
-      <h4>Total: ${totalPrice.toFixed(2)}</h4>
-      <Button variant="danger" onClick={handleClearCart}>
-        Clear Cart
-      </Button>
-      <Button variant="secondary" onClick={onContinueShopping} className="ms-3">
-        Continue Shopping
-      </Button>
+          <h4>Total: ${totalPrice.toFixed(2)}</h4>
+          <div className="d-flex justify-content-between mt-3">
+            <Button variant="danger" onClick={handleClearCart}>
+              Clear Cart
+            </Button>
+            <Button variant="secondary" onClick={() => navigate('/')}>
+              Continue Shopping
+            </Button>
+          </div>
+        </>
+      )}
     </div>
   );
 };

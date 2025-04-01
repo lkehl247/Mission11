@@ -1,11 +1,12 @@
 import React from 'react';
 import { useCart } from './CartContext';
 import { Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
-const CartSummary: React.FC<{ onViewCart: () => void }> = ({ onViewCart }) => {
+const CartSummary: React.FC = () => {
   const { cart } = useCart();
+  const navigate = useNavigate();
 
-  // Calculate total quantity and total price
   const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = cart.reduce(
     (sum, item) => sum + item.quantity * item.book.price,
@@ -19,7 +20,7 @@ const CartSummary: React.FC<{ onViewCart: () => void }> = ({ onViewCart }) => {
       <p>Total Price: ${totalPrice.toFixed(2)}</p>
       <Button
         variant="primary"
-        onClick={onViewCart}
+        onClick={() => navigate('/cart')}
         disabled={cart.length === 0}
       >
         View Cart
