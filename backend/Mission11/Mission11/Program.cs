@@ -25,9 +25,12 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors(x =>
-    x.WithOrigins("http://localhost:3000", "https://lemon-sand-0346aa81e.6.azurestaticapps.net/")
-     .AllowAnyHeader()
-     .AllowAnyMethod()
+    x.WithOrigins(
+        "http://localhost:3000", // local dev
+        "https://lemon-sand-0346aa81e.6.azurestaticapps.net" // deployed front end
+    )
+    .AllowAnyHeader()
+    .AllowAnyMethod()
 );
 
 app.UseHttpsRedirection();
