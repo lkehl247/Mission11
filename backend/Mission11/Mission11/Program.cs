@@ -25,7 +25,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors(x =>
-    x.WithOrigins("http://localhost:3000")
+    x.WithOrigins("http://localhost:3000", "https://lemon-sand-0346aa81e.6.azurestaticapps.net")
      .AllowAnyHeader()
      .AllowAnyMethod()
 );
