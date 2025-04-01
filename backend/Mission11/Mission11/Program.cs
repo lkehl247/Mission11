@@ -16,10 +16,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins(
-            "http://localhost:3000", // local dev
-            "https://lemon-sand-0346aa81e.6.azurestaticapps.net" // your deployed frontend
-        )
+        policy.AllowAnyOrigin()
         .AllowAnyHeader()
         .AllowAnyMethod();
     });
