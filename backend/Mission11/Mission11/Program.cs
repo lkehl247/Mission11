@@ -11,12 +11,15 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<BookstoreContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// ✅ Define a named CORS policy
+// ✅ Define named CORS policy
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.AllowAnyOrigin()
+        policy.WithOrigins(
+            "http://localhost:3000", // local
+            "https://lemon-sand-0346aa81e.6.azurestaticapps.net" // deployed
+        )
         .AllowAnyHeader()
         .AllowAnyMethod();
     });
